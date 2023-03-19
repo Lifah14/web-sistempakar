@@ -14,7 +14,7 @@ return new class extends Migration
     public function up()
     {
         Schema::create('gejalakulit', function (Blueprint $table) {
-            $table->bigIncrement('id');
+            $table->id();
             $table->String('kode_gejala', 5);
             $table->string('nama_gejala', 30);
             $table->timestamps();

@@ -29,6 +29,6 @@ Route::POST('/insertdata', [JeniskulitController::class, 'insertdata'])->name('i
 Route::get('/editdata/{id}', [JeniskulitController::class, 'editdata'])->name('editdata');
 Route::POST('/updatedata/{id}', [JeniskulitController::class, 'updatedata'])->name('updatedata');
 
-Route::get('/delete/{id}', [JeniskulitController::class, 'delete'])->name('delete');
+Route::delete('/delete/{id}', [JeniskulitController::class, 'delete'])->name('delete');
 
 Route::resource('gejalakulit', GejalakulitController::class);
